@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Management Dashboard</title>
+    
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Add any additional styles here -->
+</head>
+<body>
+    <header>
+        <h1>SMS Management Dashboard</h1>
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#program-control">Program Control</a>
+            <a href="#country-operator">Country-Operator Management</a>
+            <a href="#login">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dashboard Section -->
+        <section id="dashboard">
+            <h2>Real-Time Metrics</h2>
+            <div id="metrics">
+                <p>SMS Sent: <span id="sms-sent">0</span></p>
+                <p>Success Rate: <span id="success-rate">0%</span></p>
+                <p>Failures: <span id="failures">0</span></p>
+                <!-- Add charts or other visualization components here -->
+            </div>
+        </section>
+
+        <!-- Program Control Section -->
+        <section id="program-control">
+            <h2>Program Control</h2>
+            <button id="start-program">Start Program</button>
+            <button id="stop-program">Stop Program</button>
+            <!-- Add functionality for viewing status -->
+            <div id="status">
+                <h3>Status of Programs</h3>
+                <ul id="program-status-list">
+                    <!-- List of Program Statuses -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Country-Operator Management Section -->
+        <section id="country-operator">
+            <h2>Country-Operator Management</h2>
+            <form id="country-operator-form">
+                <input type="text" id="country" placeholder="Country" required>
+                <input type="text" id="operator" placeholder="Operator" required>
+                <button type="submit">Add/Update Operator</button>
+            </form>
+            <div id="operator-list">
+                <h3>Current Operators</h3>
+                <ul id="country-operator-list">
+                    <!-- List of country-operator pairs -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Login Section -->
+        <section id="login">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SMS Management System</p>
+    </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

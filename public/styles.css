@@ -1,0 +1,131 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the basic font and background for the entire page */
+body {
+    font-family: Arial, sans-serif; /* Use a sans-serif font for better readability */
+    background-color: #f4f4f4; /* Light gray background */
+    line-height: 1.6; /* Improve line spacing */
+}
+
+/* Style the header section */
+header {
+    background: #0a4f87; /* Main color for header */
+    color: white; /* Text color */
+    padding: 20px; /* Spacing inside header */
+    text-align: center; /* Center the header content */
+}
+
+nav a {
+    color: white; /* Link color */
+    margin: 0 15px; /* Spacing between links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make links bold */
+}
+
+/* Change link color on hover */
+nav a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Style primary headings */
+h1 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* General styling for section elements */
+section {
+    padding: 20px; /* Inner spacing for sections */
+    background: white; /* White background for sections */
+    margin: 20px; /* Space between sections */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Style secondary headings */
+h2 {
+    margin-bottom: 15px; /* Space below section headings */
+    color: #333; /* Dark gray for section headings */
+}
+
+/* Style for buttons */
+button {
+    background-color: #5c67f2; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Inner spacing of button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Change button background color on hover */
+button:hover {
+    background-color: #d1250f; /* Darker shade on hover */
+}
+
+/* Style forms and inputs */
+form {
+    margin: 20px 0; /* Spacing around forms */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Inner spacing */
+    margin: 8px 0; /* Spacing around fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #0fdc98; /* Change border color on focus */
+}
+
+/* Style lists in sections */
+ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+}
+
+ul li {
+    padding: 10px; /* Inner spacing for list items */
+    border-bottom: 1px solid #ddd; /* Divider between list items */
+}
+
+ul li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center the footer text */
+    padding: 20px; /* Space inside footer */
+    background: #333; /* Dark background for footer */
+    color: white; /* White text for footer */
+    position: relative; /* Allows footer to be static */
+    bottom: 0; /* Stick to bottom (not fixed) */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    nav a {
+        display: block; /* Stack links vertically on smaller screens */
+        margin: 10px 0; /* Spacing between links */
+    }
+
+    section {
+        margin: 10px; /* Reduce spacing for smaller screens */
+    }
+
+    button {
+        width: 100%; /* Make buttons full width on smaller screens */
+    }
+}

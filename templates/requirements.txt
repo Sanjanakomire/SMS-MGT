@@ -1,0 +1,6 @@
+flask==2.0.2
+Flask-SQLAlchemy==2.5.1
+Flask-PyMongo==2.3.0
+Flask-JWT-Extended==4.3.1
+requests==2.26.0
+python-telegram-bot==13.7
