@@ -68,3 +68,61 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+SMS Management Web Application
+
+Overview
+
+This web application manages and monitors an SMS system running on a Linux server. It consists of multiple Python programs triggering SMS messages to various country-operator pairs. The application provides real-time metrics, dynamic country-operator pair management, and automatic alerts for critical failures or low success rates.
+
+Features
+
+- Process Management: Start, stop, and restart screen sessions programmatically
+- Real-Time Metrics: Retrieve SMS sent, success rates, and errors per country
+- Country-Operator Management: CRUD operations for dynamic pair management
+- Alerts and Notifications: Telegram notifications for critical success rate drops and program failures
+- Authentication and Authorization: JWT-based authentication for secure API access
+
+Technology Stack
+
+- Backend: Python (Flask/FastAPI)
+- Frontend: ReactJS
+- Databases: MongoDB, MySQL
+- Monitoring: Prometheus, Grafana
+- Alerts: Telegram bots
+
+Setup Instructions
+
+Backend
+
+1. Install dependencies: pip install -r requirements.txt
+2. Configure MongoDB and MySQL databases
+3. Start backend server: python app.py
+
+Frontend
+
+1. Install dependencies: npm install
+2. Configure ReactJS environment
+3. Start frontend server: npm start
+
+Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Commit Message Guidelines
+
+- Use descriptive commit messages
+- Follow the conventional commit message format
+
+Branching Strategy
+
+- Use feature branches for new features
+- Use release branches for production-ready code
+
+By following these guidelines,a well-structured and maintainable Git repository for your SMS management web application.
